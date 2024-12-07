@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sentiments.ui.MainController">
+    <children>
+        <VBox alignment="CENTER" spacing="10.0" layoutX="50.0" layoutY="50.0">
+            <Label text="Enter Movie Review:" />
+            <TextArea fx:id="reviewTextArea" prefRowCount="5" prefColumnCount="40" wrapText="true"/>
+            <Button fx:id="predictButton" text="Predict Sentiment" onAction="#handlePredict"/>
+            <Label fx:id="resultLabel" text="Sentiment: " />
+        </VBox>
+    </children>
+</AnchorPane>
